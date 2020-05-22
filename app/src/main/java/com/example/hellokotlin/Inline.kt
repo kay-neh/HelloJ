@@ -9,10 +9,12 @@ fun main(){
 class Fish1(val name: String)
 
 fun inlineExample(){
-    val fihs = Fish1("aquaman")
+    val fihs = Fish1("say")
     println(fihs.name.toUpperCase(Locale.ROOT))
 
-    fihs.run { myWith("ade"){
+    println(fihs.name.toLowerCase(Locale.ROOT))
+
+    fihs.run { myWith("hi"){
         println(toUpperCase(Locale.ROOT))
     }
     }
